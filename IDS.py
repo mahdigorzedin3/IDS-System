@@ -48,7 +48,7 @@ class IntrusionDetectionSystem(QWidget):
             if cpu_usage > 80:
                 self.log_alert(f"⚠️ WARNING: High CPU usage detected! ({cpu_usage}%)")
 
-            if ram_usage > 50:
+            if ram_usage > 80:
                 self.log_alert(f"⚠️ WARNING: High RAM usage detected! ({ram_usage}%)")
 
             suspicious_processes = ["keylogger", "malware", "notepad.exe"]
